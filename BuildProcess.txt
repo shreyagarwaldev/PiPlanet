@@ -1,0 +1,15 @@
+1. npm install 
+2. ng build --aot -prod
+
+For local,
+3. ng serve
+
+For deploying,
+3. check-in changes to dist to the repo
+4. git push heroku master
+
+
+
+Heroku git:clone -a peaceful-temple-51946
+Heroic login
+Git push heroic master
