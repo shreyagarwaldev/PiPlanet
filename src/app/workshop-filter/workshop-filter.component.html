@@ -1,0 +1,23 @@
+<div class="filters-container">
+    <div class="location-filter">
+        <dropdown [dataModel]="cities" [buttonLabel]="cityDropdownLabel" [optionName]="'location'"></dropdown>
+    </div>
+
+    <!--<div class="photographer-filter">
+        <dropdown [dataModel]="photographers" [buttonLabel]="photographerDropdownLabel" [optionName]="'photographer'"></dropdown>
+    </div>-->
+
+    <div class="category-filter">
+        <dropdown [dataModel]="categories" [buttonLabel]="categoryDropdownLabel" [optionName]="'categories'"></dropdown>
+    </div>
+
+    <div class="range-slider">
+        <input type="text" placeholder="Min. price"/>
+        <input type="text" placeholder="Max. price"/>
+    </div>
+
+    <div class="date-picker">
+        <date-picker [label]="fromDateLabel" [minDate]="minFromDate" (selectedFromChanged)="getFromDate($event)" (selectedToChanged)="getToDate($event)"></date-picker>
+    </div>
+    <button class="get-list-btn" (click)="getResult()"><span>Filter</span>  <i class="fa fa-filter" aria-hidden="true"></i></button>
+</div>

@@ -1,0 +1,33 @@
+.top-bar-title {
+    font-family: 'Coiny', cursive;
+    font-size: 22px;
+    color: #ffffff;
+}
+
+.nav-menu a {
+    color: #ffffff;
+}
+
+nav {
+    position: fixed;
+    margin: 0;
+    width: 100%;
+    top:0;
+    left:0;
+    z-index: 99;
+    height: 6rem;
+}
+
+nav.nav-container {
+    background-color: #15424E;
+    border: none;
+}
+
+.nav-container .navbar-nav a {
+    background-color: transparent;
+    color:white;
+}
+
+nav.nav-container ul {
+    margin-top: .4rem;
+}

@@ -10,11 +10,19 @@
     text-align: center;
 }
 
+.view-all {
+    font-size: 2rem;
+    text-decoration: none;
+}
+
 .main-page-container {
     height:100%;
     min-height: 100%;
 }
 
+.view-all-container {
+    text-align: center;
+}
 
 .main-heading {
     font-size: 7rem;
@@ -49,7 +57,7 @@ header {
     border: none;
     border-radius: 300px;
     width: 30rem;
-    font-size: 3rem;
+    font-size: 2rem;
     cursor:initial;
     font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif; 
 }

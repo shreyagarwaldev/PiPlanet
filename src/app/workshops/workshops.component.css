@@ -1,0 +1,31 @@
+.filters, 
+.list {
+    position: absolute;
+    left:0;
+    width:100%;
+}
+
+.filters {
+    /*top:1.5rem;*/
+    position: fixed;
+    z-index: 99;
+    background-color: transparent;
+    height: auto;
+    /*padding-top: 1.5rem;*/
+    width:70rem;
+    padding-bottom: .3rem;
+}
+
+.list {
+    top: 20rem;
+    overflow-x:hidden;
+}
+
+.ws-container nav.navbar.navbar-default {
+    background-color: white;
+    border: none;
+}
+
+.ws-container .navbar-default .navbar-nav .active a {
+    background-color: transparent;
+}

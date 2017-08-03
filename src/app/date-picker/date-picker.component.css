@@ -1,0 +1,26 @@
+.date-picker-container {
+    display:flex;
+    border: .2px solid #426771;
+    margin-top: 1.4rem;
+}
+
+.date-picker-container input {
+    height: 3rem;
+    width:8rem;
+    border:0;
+    text-align: center;
+    background-color: transparent;
+    color: white;
+    margin-top:.2rem;
+}
+
+.date-picker-container input::placeholder {
+    color: white;
+}
+
+.date-picker-container label {
+    font-weight: 600;
+    padding-top: .4rem;
+    font-size: 1.5rem;
+    color: gray;
+}
