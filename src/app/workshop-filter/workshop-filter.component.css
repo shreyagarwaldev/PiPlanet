@@ -1,7 +1,8 @@
 .location-filter,
 .photographer-filter,
 .category-filter ,
-.range-slider,
+.min-price,
+.max-price,
 .date-picker ,
 .get-list-btn {
     /*top:20%;*/
@@ -11,9 +12,34 @@
     /*margin-right: 3rem;*/
 }
 
-.range-slider {
+*:focus {
+    outline: 0;
+}
+
+.min-price,
+.max-price {
     width: 10rem;
+    text-align: center;  
+    margin-right: 2rem;
+    margin-top: 1.4rem;
+    height: 3.4rem;
+    border: .2px solid #426771; 
+    margin-left: 1rem;
+}
+
+.min-price input ,
+.max-price input {
+    width: 10rem;
+    border: 0;
+    height: 3.4rem;
     text-align: center;
+    background-color: transparent;
+    color: white;
+}
+
+.min-price input::placeholder ,
+.max-price input::placeholder {
+    color: white;
 }
 
 .hide-dropdown {
@@ -22,7 +48,6 @@
 
 .filters-container {
     display: flex;
-    padding-left: 2.5rem;
 }
 
 .get-list-btn {
@@ -37,4 +62,5 @@
 
 .date-picker {
     margin-right: 2rem;
+    margin-left: 1rem;
 }

@@ -12,8 +12,9 @@
     background-color: transparent;
     height: auto;
     /*padding-top: 1.5rem;*/
-    width:70rem;
+    width:80rem;
     padding-bottom: .3rem;
+    left: 5rem;
 }
 
 .list {

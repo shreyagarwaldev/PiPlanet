@@ -1,5 +1,6 @@
 import { Component, OnInit, ElementRef } from '@angular/core';
 import { WorkshopRepository, IWorkshopDetails } from '../services/workshops/workshopRepository'
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
     templateUrl: './workshop-details.component.html',
@@ -9,6 +10,8 @@ import { WorkshopRepository, IWorkshopDetails } from '../services/workshops/work
 export class WorkshopDetailsComponent {
     workshopDetails: any;
     tabs: any;
+    private sub: any;
+
     private previousActiveTab: {
         content: HTMLElement,
         link: HTMLElement
@@ -19,22 +22,32 @@ export class WorkshopDetailsComponent {
 
     constructor(
         private workshopRepository: WorkshopRepository,
-        private elementRef: ElementRef) {
+        private elementRef: ElementRef,
+        private route: ActivatedRoute) {
         this.workshopDetails = <any>{};
     }
 
     ngOnInit() {
-        this.getWorkshopDetail();
+        let workshopId: string;
+            this.sub = this.route.params.subscribe(params => {
+       workshopId = params['id']; // (+) converts string 'id' to a number
+
+       // In a real app: dispatch action to load the details here.
+    });
+        this.getWorkshopDetail(workshopId);
         this.tabLinks = <HTMLCollectionOf<HTMLElement>>this.elementRef.nativeElement.querySelectorAll(".tablinks");
         this.tabcontent = <HTMLCollectionOf<HTMLElement>>this.elementRef.nativeElement.querySelectorAll(".tabcontent");
         this.initializeTabs();
     }
 
-    getWorkshopDetail() {
-        this.workshopRepository.getWorkshopDetails()
+      ngOnDestroy() {
+    this.sub.unsubscribe();
+  }
+
+    getWorkshopDetail(workshopId: string) {
+        this.workshopRepository.getWorkshopDetails(workshopId)
             .then(data => {
                 this.workshopDetails = data;
-                console.log(this.workshopDetails);
             });
     }
 

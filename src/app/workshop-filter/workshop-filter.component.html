@@ -11,11 +11,13 @@
         <dropdown [dataModel]="categories" [buttonLabel]="categoryDropdownLabel" [optionName]="'categories'"></dropdown>
     </div>
 
-    <div class="range-slider">
-        <input type="text" placeholder="Min. price"/>
-        <input type="text" placeholder="Max. price"/>
+    <div class="min-price">
+        <input type="number" step="100" placeholder="Min. price"/>
     </div>
 
+    <div class="max-price">
+        <input type="number" step="100" placeholder="Max. price"/>
+    </div>
     <div class="date-picker">
         <date-picker [label]="fromDateLabel" [minDate]="minFromDate" (selectedFromChanged)="getFromDate($event)" (selectedToChanged)="getToDate($event)"></date-picker>
     </div>

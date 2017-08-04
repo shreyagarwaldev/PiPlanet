@@ -8,6 +8,14 @@
     color: #ffffff;
 }
 
+nav img {
+    width: 3rem;
+    height: 3rem;
+    margin-top: 1.2rem;
+    margin-left: 1.5rem;
+    float: left;
+}
+
 nav {
     position: fixed;
     margin: 0;

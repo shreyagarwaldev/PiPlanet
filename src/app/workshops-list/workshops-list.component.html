@@ -1,7 +1,7 @@
 <div class="workshop-list">
     <div>
         <article class="entity" *ngFor="let data of workshops;">
-            <div class="inner">
+            <div class="inner" (click)="loadWorkshopDetails(data.workshopId, data.name)">
                 <img class="image" [src]="data.image" alt="workshop image" />
                 <h1 class="name">
                     {{ data.name }}

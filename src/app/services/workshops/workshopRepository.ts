@@ -89,7 +89,7 @@ export class WorkshopRepository {
 
     }
 
-    getWorkshopDetails() {
+    getWorkshopDetails(workshopId: string) {
         return this.http.get("http://localhost:4200/assets/ws-details.json")
                     .toPromise()
                     .then(res => <IWorkshopDetails> res.json().data)

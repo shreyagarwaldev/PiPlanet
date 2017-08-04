@@ -11,7 +11,7 @@
             {
                 "firstName": "Dustin",
                 "lastName": "Wong",
-                "profilePhoto": "../src/app/shared/images/pp1.jpeg",
+                "profilePhoto": "../assets/img/iceberg_4k-60.jpg",
                 "websiteLink": "https://www.google.com",
                 "followers": "1",
                 "location": {
@@ -24,7 +24,7 @@
             {
                 "firstName": "Justin",
                 "lastName": "Jamison",
-                "profilePhoto": "../src/app/shared/images/pp2.jpg",
+                "profilePhoto": "../assets/img/iceberg_4k-60.jpg",
                 "websiteLink": "https://www.google.com",
                 "followers": "1",
                 "location": {
@@ -35,7 +35,7 @@
                 "moreInformation": "Author, photographer, filmmaker, and National Geographic Emerging Explorer Sandesh Kadur uses images, both still and video, to expose the need for conservation and encourage protection of the world’s biodiversity. With subjects ranging from king cobras to clouded leopards, his documentary films have appeared worldwide on National Geographic, the BBC, the Discovery Channel, and elsewhere. His photographs have appeared in numerous books and magazines. Sandesh’s many awards include CIWEM Environmental Photographer of the Year, the Nature’s Best award, the International Conservation Photographer award, two Green Oscar nominations at the Wildscreen film festival, and the 2013 North American Nature Photographers Vision Award."
             }
         ],
-        "headerImage": "../src/app/shared/images/tile20.jpg",
+        "headerImage": "../assets/img/iceberg_4k-60.jpg",
         "location": {
             "city": "Seattle",
             "state": "Washington",
@@ -70,24 +70,22 @@
         },
         "workshopLink": "https://www.google.com",
         "gallery": [
-            "../src/app/shared/images/tile1.jpg",
-            "../src/app/shared/images/tile3.jpg",
-            "../src/app/shared/images/tile4.jpg",
-            "../src/app/shared/images/tile6.jpg",
-            "../src/app/shared/images/tile10.jpg",
-            "../src/app/shared/images/tile20.jpg",
-            "../src/app/shared/images/tile1.jpg",
-            "../src/app/shared/images/tile3.jpg",
-            "../src/app/shared/images/tile4.jpg",
-            "../src/app/shared/images/tile6.jpg",
-            "../src/app/shared/images/tile10.jpg",
-            "../src/app/shared/images/tile20.jpg",
-            "../src/app/shared/images/tile1.jpg",
-            "../src/app/shared/images/tile3.jpg",
-            "../src/app/shared/images/tile4.jpg",
-            "../src/app/shared/images/tile6.jpg",
-            "../src/app/shared/images/tile10.jpg",
-            "../src/app/shared/images/tile20.jpg"
+            "../assets/img/iceberg_4k-60.jpg",
+            "../assets/img/iceberg_4k-60.jpg",
+            "../assets/img/iceberg_4k-60.jpg",
+            "../assets/img/iceberg_4k-60.jpg",
+            "../assets/img/iceberg_4k-60.jpg",
+            "../assets/img/iceberg_4k-60.jpg",
+            "../assets/img/iceberg_4k-60.jpg",
+            "../assets/img/iceberg_4k-60.jpg",
+            "../assets/img/iceberg_4k-60.jpg",
+            "../assets/img/iceberg_4k-60.jpg",
+            "../assets/img/iceberg_4k-60.jpg",
+            "../assets/img/iceberg_4k-60.jpg",
+            "../assets/img/iceberg_4k-60.jpg",
+            "../assets/img/iceberg_4k-60.jpg",
+            "../assets/img/iceberg_4k-60.jpg",
+            "../assets/img/iceberg_4k-60.jpg"
         ]
     }
 }
