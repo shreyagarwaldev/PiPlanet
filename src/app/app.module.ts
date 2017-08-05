@@ -18,6 +18,7 @@ import { DropdownComponent } from './dropdown-menu/dropdown-menu.component';
 import { DatePickerComponent } from './date-picker/date-picker.component';
 import { WorkshopDetailsComponent } from './workshop-details/workshop-details.component';
 import { WorkshopRepository } from './services/workshops/workshopRepository';
+import { Angulartics2Module, Angulartics2GoogleAnalytics } from 'angulartics2';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,9 @@ import { WorkshopRepository } from './services/workshops/workshopRepository';
     BrowserModule,
     FormsModule,
     HttpModule,
-    RouterModule.forRoot(ROUTES)
+    RouterModule.forRoot(ROUTES),
+    Angulartics2Module.forRoot([ Angulartics2GoogleAnalytics ]),
+    Angulartics2Module.forChild()
   ],
   providers: [WorkshopRepository],
   bootstrap: [AppComponent]
