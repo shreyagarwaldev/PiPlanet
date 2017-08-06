@@ -1,0 +1,26 @@
+<div class="workshop-list">
+    <div>
+        <article class="entity" *ngFor="let data of workshops;">
+            <div class="inner" (click)="loadWorkshopDetails(data.workshopId, data.name)">
+                <img class="image" [src]="data.image" alt="workshop image" />
+                <h1 class="name">
+                    {{ data.name }}
+                </h1>
+                <hr>
+                <div class="location">
+                    <i class="fa fa-map-marker" aria-hidden="true"></i>
+                    <span>  {{data.location.city}},</span>
+                    <span> {{data.location.state}},</span>
+                    <span> {{data.location.country}} </span>
+                </div>
+                <div>{{data.category}}</div>
+                <div class="date">
+                    <span> {{ data.dates.startDate }} </span>
+                    <span>-</span>
+                    <span> {{ data.dates.endDate }} </span>
+                </div>
+                <div class="price">{{data.price}}</div>
+            </div>
+        </article>
+    </div>
+</div>

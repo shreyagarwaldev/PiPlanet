@@ -1,12 +1,25 @@
 <div class="main-page-container">
+    <navi-bar></navi-bar>
     <div class="header">
         <header class="masthead">
             <div class="header-content">
                 <div class="header-content-inner">
                     <div class="main-heading" id="homeHeading">Pixelated Planet</div>
-                    <div class="btn btn-lg" href="#">Launching soon</div>
+                    <div class="sub-heading">It is a long established fact that a reader will be distracted by the readable content of a page when
+                        looking at its layout.</div>
+                    <a class="btn btn-default btn-lg" href="#workshops">Upcoming Workshops</a>
                 </div>
             </div>
         </header>
     </div>
+
+    <section id="workshops">
+        <h1 class="ws-heading">
+            Workshops
+        </h1>
+        <workshops-list path="http://localhost:4200/assets/main-ws.json"></workshops-list>
+        <div class="view-all-container">
+            <a href="/workshops" class="view-all"><span>View all</span>  <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></a>
+        </div>
+    </section>
 </div>

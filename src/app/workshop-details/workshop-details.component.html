@@ -1,0 +1,79 @@
+<navi-bar></navi-bar>
+
+<div class="header-img">
+    <img class="detail-img" [src]="workshopDetails?.headerImage" alt="workshop image" />
+</div>
+
+<div class="wsd-name">{{workshopDetails?.name}}</div>
+
+<div class="highlights">
+    <div class="wsd-link">
+        <a href="{{workshopDetails?.workshopLink}}" target="_blank"><i class="fa fa-link"></i> Workshop link
+        </a>
+    </div>
+    <div class="wsd-location">
+        <i class="fa fa-map-marker"></i>
+        <span>{{workshopDetails?.location?.city}},</span>
+        <span> {{workshopDetails?.location?.state}},</span>
+        <span> {{workshopDetails?.location?.country}}</span>
+    </div>
+    <div class="wsd-dates">
+        <i class="fa fa-calendar"></i>
+        <span>{{workshopDetails?.dates?.startDate}} - {{workshopDetails?.dates?.endDate}}</span>
+    </div>
+    <div class="wsd-price">
+        <i class="fa fa-usd"></i> {{workshopDetails?.price}}
+    </div>
+</div>
+<div class="detail-tabs">
+    <div class="tab">
+        <button class="tablinks active" (click)="openTabs($event, 0)">Description</button>
+        <button class="tablinks" (click)="openTabs($event, 1)">Itinerary</button>
+        <button class="tablinks" (click)="openTabs($event, 2)">Gallery</button>
+        <button class="tablinks" (click)="openTabs($event, 3)">Photographers</button>
+    </div>
+
+    <div id="Description" class="tabcontent">
+        <h3>Description</h3>
+        <p>{{workshopDetails?.details?.introduction}}</p>
+    </div>
+
+    <div id="Itinerary" class="tabcontent">
+        <h3>Itinerary</h3>
+        <div class="day-wrapper" *ngFor="let data of workshopDetails?.details?.itinerary;">
+            <h5>
+                <span>Day {{data.day}} - </span>
+                <span class="location">{{data.location}}</span>
+            </h5>
+            <p>{{data.content}}</p>
+        </div>
+    </div>
+
+    <div id="Gallery" class="tabcontent">
+        <img class="image" *ngFor="let image of workshopDetails?.gallery;" [src]="image" alt="workshop image" />
+    </div>
+
+    <div id="Photographer" class="tabcontent">
+        <h3>Photographers</h3>
+        <div class="photographer-information" *ngFor="let photographer of workshopDetails?.photographers;">
+            <div class="profile-photo">
+                <img class="profile-img" [src]="photographer.profilePhoto" alt="workshop image" />
+            </div>
+            <h4>
+                <span>{{photographer?.firstName}}</span>
+                <span>{{photographer?.lastName}}</span>
+            </h4>
+            <div class="detail-location">
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                <span>{{photographer?.location?.city}},</span>
+                <span> {{photographer?.location?.state}},</span>
+                <span> {{photographer?.location?.country}}</span>
+            </div>
+            <div class="website-link">
+                <a href="{{photographer?.websiteLink}}" target="_blank"><i class="fa fa-external-link"></i> Website
+                </a>
+            </div>
+            <p>{{photographer?.moreInformation}}</p>
+        </div>
+    </div>
+</div>

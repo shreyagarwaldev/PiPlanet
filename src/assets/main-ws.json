@@ -1,0 +1,76 @@
+{
+    "data": [
+            {
+            "name": "Workshop name",
+            "dates": {
+                "startDate": "16 Aug '17",
+                "endDate": "27 Aug '17"
+            },
+            "price": "$10000",
+            "photographer": {
+                "firstName": "Dustin",
+                "lastName": "Wong"
+            },
+            "image": "../assets/img/iceberg_4k-60.jpg",
+            "location": {
+                "city": "Seattle",
+                "state": "Washington",
+                "country": "USA"
+            }
+        },
+        {
+            "name": "Workshop name",
+            "dates": {
+                "startDate": "16 Aug '17",
+                "endDate": "27 Aug '17"
+            },
+            "price": "$10000",
+            "photographer": {
+                "firstName": "Dustin",
+                "lastName": "Wong"
+            },
+            "image": "../assets/img/iceberg_4k-60.jpg",
+            "location": {
+                "city": "Seattle",
+                "state": "Washington",
+                "country": "USA"
+            }
+        },
+        {
+            "name": "Workshop name",
+            "dates": {
+                "startDate": "16 Aug '17",
+                "endDate": "27 Aug '17"
+            },
+            "price": "$10000",
+            "photographer": {
+                "firstName": "Dustin",
+                "lastName": "Wong"
+            },
+            "image": "../assets/img/iceberg_4k-60.jpg",
+            "location": {
+                "city": "Seattle",
+                "state": "Washington",
+                "country": "USA"
+            }
+        },
+        {
+            "name": "Workshop name",
+            "dates": {
+                "startDate": "16 Aug '17",
+                "endDate": "27 Aug '17"
+            },
+            "price": "$10000",
+            "photographer": {
+                "firstName": "Dustin",
+                "lastName": "Wong"
+            },
+            "image": "../assets/img/iceberg_4k-60.jpg",
+            "location": {
+                "city": "Seattle",
+                "state": "Washington",
+                "country": "USA"
+            }
+        }
+        ]
+}

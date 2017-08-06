@@ -1,0 +1,92 @@
+.contact-us input {
+    height: 5rem;
+    padding: 1rem;
+    font-size: 1.8rem;
+}
+
+.contact-us h1 {
+    font-size: 4.5rem;
+}
+
+.static-info {
+    font-size: 2.3rem;
+    width: 100%;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+.form-wrapper {
+    text-align: center;
+    display: inline-block;
+}
+
+.form-group {
+    width:60rem;
+    margin: 2rem;
+    text-align: left;
+}
+
+.contact-us {
+    text-align: left;
+}
+
+.form-group .alert {
+    position: absolute;
+    width: inherit;
+    padding: 0;
+}
+
+.name-group, .mail-number-group {
+    display: flex;
+}
+
+.message-box .alert, .subject-box .alert {
+    width:60rem;
+}
+
+/*#message, #subject {
+    width: 64rem;
+}*/
+
+#message {
+    height: 20rem;
+    font-size: 1.8rem;
+}
+
+.ng-valid[required], .ng-valid.required  {
+  border-left: 5px solid #42A948; /* green */
+}
+
+.ng-invalid:not(form)  {
+  border-left: 5px solid #a94442; /* red */
+}
+
+button.submit-btn:disabled {
+  background-color: #eee;
+  color: #aaa;
+  cursor: auto;
+}
+
+.contact-us input:required {
+    /*border: 1px solid red;*/
+    outline: none;
+}
+
+.submit-btn {
+    width:25rem;
+    margin-top: 2rem;
+    height: 4rem;
+}
+
+.contact-us {
+    margin-top: 10rem;
+    text-align: center;
+}
+
+.contact-us .message, .contact-us .subject {
+    width: 64rem;
+}
+ .contact-us .message {
+     height: 20rem;
+     vertical-align: top;
+ }

@@ -1,0 +1,66 @@
+.workshop-list {
+    text-align: center;
+}
+
+.entity {
+    width:28rem;
+    display:inline-block;
+    margin: 2rem;
+    box-shadow: 0rem 0rem 0.2rem 0rem #888888;
+}
+
+.entity img {
+    vertical-align: middle;
+    width: 28rem;
+    height: 30rem;
+    margin-bottom: 2rem;
+    object-fit: cover;
+    filter: sepia(20%);
+}
+
+.inner {
+  text-align: center;
+  position: relative;
+  padding-bottom:2rem;
+}
+
+h1.name {
+  margin-top:0;
+  font-size: 2rem;
+  color: #15424E;
+}
+
+.price{
+  color: #FC834E;
+  text-align: left;
+  padding-left: 2rem;
+  position: absolute;
+  right: 2rem;
+  bottom: 2rem;
+}
+
+hr {
+  width:10rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  border-color: #15424E;
+  opacity: 0.3;
+}
+
+.date {
+    color: #FC834E;
+    text-align: left;
+    padding-left: 2rem;
+}
+
+.location {
+    color: #15424E;
+    padding-bottom: 1rem;
+    opacity: 0.6;
+}
+
+
+
+
+
+
